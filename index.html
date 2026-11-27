@@ -47,6 +47,7 @@
     .badge-red { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
     .badge-blue { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
     .badge-slate { background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; }
+    .badge-purple { background: #faf5ff; color: #7e22ce; border: 1px solid #d8b4fe; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col overflow-x-hidden">
@@ -247,7 +248,7 @@
                   <span class="font-semibold text-slate-800">Tekla PowerFab</span>
                   <span class="badge-green px-2 py-0.5 rounded font-semibold">Đáp ứng</span>
                 </div>
-                <p class="text-slate-600">Cùng hãng Tekla, Trimble Connect, máy CNC, <strong>Open API</strong>; Lantek cần hỏi thêm.</p>
+                <p class="text-slate-600">Cùng hãng Tekla, Trimble Connect, <strong>có Lantek Expert/Flex 3D (2026i)</strong>, máy CNC, <strong>Open API</strong>.<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span></p>
               </div>
             </div>
           </div>
@@ -294,8 +295,8 @@
               <p class="text-slate-600 mt-1 text-sm leading-relaxed">Phải chốt hệ thống “gốc” cho kho và mua thép trước khi mua module. Theo SDD dự án NetSuite, giai đoạn 1 chưa tích hợp trực tiếp; NetSuite cần nhận số kg sản xuất theo dự án, theo kỳ để phân bổ chi phí.</p>
             </div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
-              <div class="font-bold text-slate-900">2. Liên kết phần mềm được giải quyết theo hai hướng</div>
-              <p class="text-slate-600 mt-1 text-sm leading-relaxed">STRUMIS liệt kê sẵn Lantek trong danh sách đối tác tích hợp (giữ được Lantek). PowerFab có lợi thế tự nhiên vì SB đang dùng Tekla Structures và có Open API công khai.</p>
+              <div class="font-bold text-slate-900">2. Cả hai đều kết nối được Lantek &amp; Tekla<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span></div>
+              <p class="text-slate-600 mt-1 text-sm leading-relaxed">Không chỉ STRUMIS, tài liệu bản <strong>Tekla PowerFab 2026i</strong> xác nhận tích hợp trực tiếp <strong>Lantek Expert &amp; Flex 3D</strong> trong Maintenance &gt; Integration Settings. Điểm chốt khi demo là độ mượt đẩy/nhận file nest và cập nhật phôi dư.</p>
             </div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
               <div class="font-bold text-slate-900">3. Có công cụ lập lịch, chưa chắc có cảnh báo trễ tự động</div>
@@ -375,7 +376,7 @@
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
           <div class="flex items-center gap-2 bg-slate-100 p-1 rounded-xl w-fit">
             <button type="button" id="modeNcc" class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-white text-slate-900 shadow-sm transition">
-              STRUMIS vs PowerFab (29 tiêu chí)
+              STRUMIS vs PowerFab (31 tiêu chí)
             </button>
             <button type="button" id="modeMrp" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-600 hover:text-slate-900 transition">
               So với MRP hiện tại (14 tiêu chí)
@@ -525,7 +526,7 @@
           <li>SoftwareConnect – STRUMIS Reviews; Tested Intelligence – 2026 Review; GetApp, Capterra.</li>
           <li>Trimble Help – Tekla PowerFab; case study Trimble (All Things Metal, Bennett Steel, Wareing Buildings, South Durham Structures).</li>
           <li>Tài liệu nội bộ SBV: MRP System Overview, MRP Issue Register, góp ý cải tiến MRP 18/06/2025.</li>
-          <li>Nghiên cứu bổ sung (2026): <a href="https://bidferra.com/blog/tekla-powerfab-vs-strumis-vs-fabsuite" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Ferra (2026) — So sánh Tekla PowerFab vs STRUMIS</a>; <a href="https://strumis.com/strumis-frequently-asked-questions/" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">STRUMIS FAQ (Cloud Azure/AWS &amp; On-Premises)</a>; <a href="https://download.trimble.com/tekla-powerfab-suite/products" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Trimble Tekla PowerFab Suite</a>.</li>
+          <li>Nghiên cứu &amp; xác thực bổ sung (2026): <a href="https://help.trimble.com/doc/tekla-powerfab/2026i/integr_lantek" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Trimble Help 2026i — Tích hợp Lantek</a>; <a href="https://help.trimble.com/article/tekla-powerfab-apis" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Trimble Help — PowerFab .NET &amp; REST APIs</a>; <a href="https://help.trimble.com/doc/tekla-powerfab/2026i/rel_tekla_powerfab_cover" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Tekla PowerFab 2026i Release Notes</a>; <a href="https://strumisclient.com/releases" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">STRUMIS Releases (V12 &amp; Mobility V4)</a>; <a href="https://strumis.com/blog/strumis-v12-steel-fabrication-management-software" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">STRUMIS V12 &amp; SteelXML</a>; <a href="https://eziil.com/strumis-vs-eziil-for-small-steel-fabricators/" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">EZIIL — Tham khảo giá STRUMIS</a>; <a href="https://bidferra.com/blog/tekla-powerfab-vs-strumis-vs-fabsuite" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Ferra (2026) — So sánh PowerFab vs STRUMIS</a>.<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span></li>
           <li><strong>Lưu ý:</strong> Case study và trích dẫn là tài liệu quảng bá của nhà cung cấp; các nhận định “cần demo” hoặc “chưa xác minh” phải được xác nhận bằng văn bản trước khi ra quyết định.</li>
         </ul>
       </div>
@@ -670,7 +671,7 @@
 (function () {
   /* ---------------- DATA ---------------- */
   const scenarios = [
-    { pri: "Giữ Lantek làm hệ thống nesting", pick: "STRUMIS", badge: "badge-blue", why: "Lantek có trong danh sách đối tác chính thức của STRUMIS." },
+    { pri: "Giữ Lantek làm hệ thống nesting", pick: "Demo cả hai", badge: "badge-blue", why: "Cả STRUMIS và Tekla PowerFab 2026i (Lantek Expert/Flex 3D) đều hỗ trợ kết nối chính thức.", updated: true },
     { pri: "Khai thác sâu Tekla & Trimble Connect", pick: "Tekla PowerFab", badge: "badge-green", why: "Cùng hệ sinh thái Trimble, cùng hãng với Tekla Structures SB đang dùng." },
     { pri: "Truy xuất vật tư, phôi dư chuyên sâu", pick: "Demo cả hai", badge: "badge-amber", why: "Cả hai đều công bố có; cần đo độ sâu thực tế khi demo." },
     { pri: "Tích hợp với NetSuite", pick: "Demo tích hợp cả hai", badge: "badge-amber", why: "PowerFab có Open API; STRUMIS có tiền lệ chạy song song SAP B1." },
@@ -680,10 +681,10 @@
   const compareNcc = [
     { cat: "Thiết kế và tích hợp", name: "Tích hợp Tekla", s: "Hai chiều", p: "Cùng hệ sinh thái (qua Trimble Connect)", sbv: "PowerFab có lợi thế tự nhiên", diff: true },
     { cat: "Thiết kế và tích hợp", name: "CAD khác", s: "SDS2, Advance Steel, SolidWorks, Inventor, BoCAD", p: "SDS2, Advance Steel", sbv: "Ít quan trọng nếu SB chỉ dùng Tekla", diff: true },
-    { cat: "Thiết kế và tích hợp", name: "Nesting", s: "Có sẵn (thép hình, WT, phôi tấm thật; đối tác Lantek, SigmaNEST)", p: "Có (Advance Bill; SigmaNEST, ProNest)", sbv: "STRUMIS cho phép giữ Lantek", diff: true },
-    { cat: "Thiết kế và tích hợp", name: "Lantek", s: "Có trong danh sách đối tác", p: "Chưa thấy (Cần hỏi)", sbv: "Quan trọng: SB đang dùng Lantek", diff: true },
+    { cat: "Thiết kế và tích hợp", name: "Nesting", s: "Có sẵn (thép hình, WT, phôi tấm thật; đối tác Lantek, SigmaNEST)", p: "Có (Advance Bill; Lantek, SigmaNEST, ProNest)", sbv: "Cả hai đều giữ được Lantek", diff: false, updated: true },
+    { cat: "Thiết kế và tích hợp", name: "Lantek", s: "Có trong danh sách đối tác", p: "Có tích hợp chính thức (2026i): Lantek Expert & Flex 3D", sbv: "Đo độ mượt đẩy/nhận file nest & phôi dư khi demo", diff: false, updated: true },
     { cat: "Thiết kế và tích hợp", name: "Máy CNC", s: "Peddinghaus, Ficep, Voortman, Kaltenbach, Controlled Automation, Vernet Behringer, Hypertherm", p: "Peddinghaus, Ficep, Voortman", sbv: "Kiểm tra máy SB đang dùng", diff: true },
-    { cat: "Thiết kế và tích hợp", name: "API, ERP", s: "Liên kết kế toán/ERP bên thứ ba (phạm vi API cần xác minh)", p: "Open API công khai", sbv: "Nền cho tích hợp NetSuite", diff: true },
+    { cat: "Thiết kế và tích hợp", name: "API, ERP", s: "Kết nối ERP bên thứ ba; có tiền lệ với SAP B1", p: "2 API: .NET API (XML/LAN/VPN — đầy đủ nhất) & REST API (JSON/HTTPS — còn ít endpoint)", sbv: "Tích hợp sâu NetSuite với PowerFab có thể cần middleware/VPN gọi .NET API", diff: true, updated: true },
 
     { cat: "Vật tư và mua hàng", name: "Heat number, chứng chỉ", s: "Thế mạnh (Multi-Facility)", p: "Có (Heat #, PO #, B/L # trên kho)", sbv: "Cần xem độ sâu khi demo", diff: false },
     { cat: "Vật tư và mua hàng", name: "Phôi dư", s: "Phôi tấm dư theo hình dạng thật", p: "Phần dư và chi phí phần dư khi ghép cắt", sbv: "Giảm hao hụt", diff: false },
@@ -691,7 +692,7 @@
 
     { cat: "Sản xuất và giao hàng", name: "Kế hoạch, tiến độ", s: "Long Range và Detailed Planning", p: "Project Schedule Gantt, baseline, snapshot", sbv: "Liên quan cảnh báo giao trễ", diff: true },
     { cat: "Sản xuất và giao hàng", name: "Theo dõi xưởng", s: "Tự định tuyến công đoạn; barcode; dấu thời gian nhân công", p: "Theo piece mark, sequence, lot; cut list", sbv: "Tương đương", diff: false },
-    { cat: "Sản xuất và giao hàng", name: "Ứng dụng di động", s: "Mobility V3.3 (iPhone, Android): đính kèm ảnh, quét xem tồn, PO, SO; VISION trên tablet", p: "PowerFab Go (trình duyệt): QC, chấm công, kho", sbv: "Tương đương", diff: false },
+    { cat: "Sản xuất và giao hàng", name: "Ứng dụng di động", s: "Mobility V3.3 / V4 (iOS/Android) & VISION; V12 hỗ trợ SteelXML PO/ASN & in tem khi cắt", p: "PowerFab Go (trình duyệt): bản 2026i cho nhiều công nhân bấm giờ cùng lúc trên 1 assembly", sbv: "Cả hai đều nâng cấp mạnh cho xưởng năm 2026", diff: false, updated: true },
     { cat: "Sản xuất và giao hàng", name: "QA/QC", s: "Module QA/QC (V12): cổng chặn công đoạn, retest, audit trail", p: "General Inspections trên PowerFab Go", sbv: "Demo cả hai trên quy trình QC của SB", diff: true },
     { cat: "Sản xuất và giao hàng", name: "Giao hàng", s: "Vận đơn, trạng thái đến công trường và lắp dựng", p: "Load theo xe, tải trọng, trạng thái từng cấu kiện; Shipping Calendar", sbv: "Tương đương", diff: false },
     { cat: "Sản xuất và giao hàng", name: "Xem 3D", s: "BIMReview, Vision (web)", p: "Trimble Connect", sbv: "Tương đương", diff: false },
@@ -711,6 +712,8 @@
     { cat: "Hạ tầng & Cấp phép", name: "App xưởng & Phụ thuộc Wi-Fi", s: "Mobility V3.3 (App iOS/Android gốc) + VISION (web)", p: "PowerFab Go (chạy hoàn toàn trên trình duyệt web)", sbv: "Kiểm tra độ ổn định khi sóng Wi-Fi bãi thép/xưởng sơn yếu", diff: true },
     { cat: "Hạ tầng & Cấp phép", name: "Bóc tách bản vẽ PDF (Takeoff)", s: "Mạnh từ model 3D (Estimodelling); không chuyên đọc PDF 2D tự động", p: "Mạnh từ Tekla model; không thay thế phần mềm PDF takeoff chuyên dụng", sbv: "Nếu hay báo giá từ PDF, cần tách riêng bài toán takeoff", diff: false },
     { cat: "Hạ tầng & Cấp phép", name: "Thị trường mạnh & Lịch sử", s: "Độc lập hãng CAD; mạnh tại Anh, Châu Âu, Trung Đông, Úc", p: "Tiền thân FabSuite (Trimble mua 2018, đổi tên 2023); mạnh nhất Bắc Mỹ", sbv: "STRUMIS có lợi thế cộng đồng tại Úc (hỗ trợ SBA)", diff: true },
+    { cat: "Hạ tầng & Cấp phép", name: "CSDL & Đa nhà máy", s: "Microsoft SQL Server; hỗ trợ vận hành nhiều xưởng", p: "MySQL (3306) + Remote Server TCP 9154 (PowerFab Go); REST API dùng header X-Site-Subdomain", sbv: "Quan trọng khi kết nối NetSuite cho cả SBV và SBA", diff: true, updated: true },
+    { cat: "Hạ tầng & Cấp phép", name: "Giá tham khảo (Chưa chính thức)", s: "Quote-only; nguồn EZIIL ghi nhận từ €2,300/license mua đứt + phí bảo trì năm", p: "Quote-only; license Tekla Structures tách riêng hoàn toàn", sbv: "Bắt buộc xin báo giá trọn gói 5 năm từ cả hai hãng", diff: false, updated: true },
     { cat: "Hạ tầng & Cấp phép", name: "Xuất dữ liệu khi rời hệ thống", s: "SQL Server nội bộ (dễ truy xuất nếu tự host)", p: "Cần xác nhận định dạng export toàn bộ lịch sử nếu dừng hợp đồng", sbv: "Đưa điều khoản sở hữu & xuất dữ liệu vào hợp đồng 5 năm", diff: true }
   ];
 
@@ -718,7 +721,7 @@
     { name: "Nhập dữ liệu Tekla", cur: "Có", s: "Hai chiều", p: "Cùng hệ sinh thái", diff: false },
     { name: "Theo dõi part mark, 3D", cur: "Có (Điểm mạnh hiện tại)", s: "Có", p: "Có", diff: false },
     { name: "App di động, QC", cur: "Có (QC kèm ảnh)", s: "Mobility V3.3, QA/QC V12 (đính kèm ảnh, cổng kiểm tra; cần demo)", p: "PowerFab Go (có inspection, cần demo ảnh)", diff: true },
-    { name: "Nesting, CNC", cur: "Không (Lantek rời — issue #11)", s: "Có (Giữ được Lantek)", p: "Có (Lantek cần hỏi)", diff: true },
+    { name: "Nesting, CNC", cur: "Không (Lantek rời — issue #11)", s: "Có (Giữ được Lantek)", p: "Có (Hỗ trợ Lantek Expert/Flex 3D — 2026i)", diff: true, updated: true },
     { name: "Heat number, chứng chỉ", cur: "Không", s: "Có", p: "Có", diff: true },
     { name: "Kho thép, mua hàng", cur: "Không", s: "Có", p: "Có", diff: true },
     { name: "Dự toán", cur: "Không", s: "Có", p: "Có", diff: true },
@@ -807,8 +810,9 @@
   };
 
   const powerfabData = {
-    summary: "Bộ giải pháp của Trimble (cùng hãng Tekla Structures). Mạnh nhất ở liên thông Tekla & Trimble Connect, tiến độ dự án dạng Gantt, PowerFab Go có QC & chấm công, cùng Open API công khai. Rủi ro lớn nhất: Lantek chưa có trong danh sách tích hợp, chưa rõ tiếng Việt, hỗ trợ VN và giá.",
-    bestFor: "SB muốn khai thác tối đa Tekla Structures và Trimble Connect, ưu tiên quản lý tiến độ dự án và giao hàng, và sẵn sàng thay đổi cách làm nesting nếu PowerFab không nhận kết quả từ Lantek.",
+    summary: "Bộ giải pháp của Trimble (cùng hãng Tekla Structures). Bản 2026i đã hỗ trợ chính thức Lantek Expert & Flex 3D, bổ sung PowerFab Connector và cho phép nhiều công nhân bấm giờ cùng lúc trên 1 assembly. Rủi ro chính còn lại: REST API còn ít endpoint (tích hợp sâu cần .NET API qua LAN/VPN), giao diện desktop còn nét FabSuite cũ, chưa rõ tiếng Việt & hỗ trợ tại VN.",
+    updatedSummary: true,
+    bestFor: "SB muốn khai thác tối đa hệ sinh thái Tekla Structures / Trimble Connect và vẫn giữ được Lantek (bản 2026i), đồng thời sẵn sàng đầu tư middleware/.NET API nếu tích hợp sâu với NetSuite.",
     modules: [
       ["1. Estimating", "Bóc tách từ model, tính vật liệu, nhân công, gia công; so sánh dự toán vs thực tế", "MRP hiện tại không có"],
       ["2. Project Management", "Job, tiến độ dự án (Gantt, baseline), lịch giao hàng; bản vẽ, revision, submittals", "Có Gantt, baseline"],
@@ -832,14 +836,14 @@
       ["Hệ sinh thái hỗ trợ rộng", "Tested Intelligence: phổ biến hơn STRUMIS ở Bắc Mỹ; Trimble là hãng lớn", "Hỗ trợ tại VN vẫn phải hỏi"]
     ],
     weaknesses: [
-      ["Lantek chưa thấy trong danh sách tích hợp", "Nesting công bố qua SigmaNEST, ProNest", "Cao", "Hỏi trực tiếp; nếu không có phải đổi nesting hoặc làm tích hợp riêng"],
+      ["REST API còn ít endpoint; tích hợp sâu cần .NET API", "Trimble API Docs: .NET API dùng XML qua socket LAN/VPN; REST API đang mở rộng", "Trung bình–cao", "Kiểm chứng với nhóm NetSuite xem REST API có đủ endpoint cần thiết không", true],
       ["Cảnh báo giao trễ tự động, khóa kỳ chưa có bằng chứng", "Có Gantt nhưng chưa thấy cảnh báo, khóa kỳ", "Cao", "Kịch bản demo bắt buộc"],
       ["Tiếng Việt chưa xác minh", "Chưa có tài liệu", "Cao", "Hỏi và thử PowerFab Go với tổ đội"],
       ["Hỗ trợ tại Việt Nam chưa xác minh", "Chưa có tài liệu", "Cao", "Đối tác Trimble khu vực, SLA"],
       ["Giá thành, Budget vs Actual chưa rõ", "Có so sánh dự toán với thực tế; độ linh hoạt chưa biết", "Trung bình–cao", "Demo giá thành theo công đoạn"],
       ["Danh sách máy CNC công bố ngắn hơn", "Peddinghaus, Ficep, Voortman", "Tùy máy của SB", "Đối chiếu máy đang dùng"],
       ["Chưa có đánh giá độc lập đủ mẫu", "Bằng chứng chủ yếu là case study của Trimble", "Trung bình", "Gọi khách hàng tham chiếu"],
-      ["Giao diện desktop nhiều lưới, nhiều cửa sổ", "Nhận xét từ ảnh màn hình, chưa phải phản hồi người dùng", "Trung bình", "Cho người dùng thật thao tác thử"],
+      ["Giao diện desktop còn dáng dấp FabSuite cũ; không tự bóc tách 2D PDF", "Ferra (2026): phần lớn MIS vẫn cần takeoff riêng nếu chưa có model 3D", "Trung bình", "Cho kỹ sư dự toán và xưởng thao tác thử trực tiếp", true],
       ["Không công khai giá", "Phải xin báo giá", "Trung bình", "Báo giá trọn gói 5 năm"],
       ["Lợi thế giảm nếu không dùng Tekla", "Giá trị lớn nhất nằm ở hệ sinh thái Trimble", "Thấp với SB", "SB đã dùng Tekla"]
     ],
@@ -851,7 +855,7 @@
       ["Quản lý vật tư, truy xuất", "Tốt", "badge-blue", "Có heat #; độ sâu truy xuất cần demo"],
       ["App di động, QA/QC", "Tốt", "badge-blue", "PowerFab Go có inspection, chấm công"],
       ["API, tích hợp ERP", "Tốt", "badge-blue", "Open API"],
-      ["Nesting, Lantek", "Cần kiểm chứng", "badge-amber", "Có nesting; Lantek chưa rõ"],
+      ["Nesting, Lantek", "Tốt", "badge-blue", "Bản 2026i tích hợp chính thức Lantek Expert & Flex 3D", true],
       ["Báo cáo, khóa sổ", "Cần kiểm chứng", "badge-amber", "Chưa có bằng chứng"],
       ["Giá thành, Budget vs Actual", "Cần kiểm chứng", "badge-amber", "Chưa có bằng chứng"],
       ["Tài chính, kế toán Việt Nam", "Không phù hợp", "badge-red", "Giữ ở NetSuite"],
@@ -979,7 +983,7 @@
         <div class="text-sm font-bold text-slate-900 leading-snug">${s.pri}</div>
       </div>
       <div class="space-y-1.5 pt-2 border-t border-slate-200">
-        <span class="${s.badge} inline-block text-sm font-bold px-2 py-0.5 rounded-full">${s.pick}</span>
+        <span class="${s.badge} inline-block text-sm font-bold px-2 py-0.5 rounded-full">${s.pick}</span>${s.updated ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}
         <p class="text-sm text-slate-600 leading-relaxed">${s.why}</p>
       </div>`;
     scenGrid.appendChild(card);
@@ -1033,7 +1037,7 @@
         tr.className = "hover:bg-slate-50/80";
         tr.innerHTML = `
           <td class="py-2.5 px-3 align-top">
-            <div class="font-semibold text-slate-900">${r.name}</div>
+            <div class="font-semibold text-slate-900">${r.name}${r.updated ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}</div>
             <div class="text-sm text-slate-400">${r.cat}</div>
           </td>
           <td class="py-2.5 px-3 text-slate-700 align-top">${r.s}</td>
@@ -1062,7 +1066,7 @@
         const tr = document.createElement("tr");
         tr.className = "hover:bg-slate-50/80";
         tr.innerHTML = `
-          <td class="py-2.5 px-3 font-semibold text-slate-900 align-top">${r.name}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-900 align-top">${r.name}${r.updated ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}</td>
           <td class="py-2.5 px-3 text-slate-600 align-top">${r.cur}</td>
           <td class="py-2.5 px-3 text-slate-800 align-top">${r.s}</td>
           <td class="py-2.5 px-3 text-slate-800 align-top">${r.p}</td>`;
@@ -1142,7 +1146,7 @@
           <h2 class="text-lg font-bold text-slate-900">${name}</h2>
           <span class="badge-blue text-sm font-semibold px-3 py-1 rounded-full w-fit">${isStrumis ? "13 Module + QA/QC V12" : "9 Phân hệ + Open API"}</span>
         </div>
-        <p class="text-sm text-slate-700 leading-relaxed">${data.summary}</p>
+        <p class="text-sm text-slate-700 leading-relaxed">${data.summary}${data.updatedSummary ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}</p>
         <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-sm text-emerald-950">
           <strong>Phù hợp nhất khi:</strong> ${data.bestFor}
         </div>
@@ -1173,7 +1177,7 @@
             ${data.weaknesses.map((w, i) => `
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-sm space-y-1">
                 <div class="flex items-start justify-between gap-2">
-                  <span class="font-bold text-slate-900">${i + 1}. ${w[0]}</span>
+                  <span class="font-bold text-slate-900">${i + 1}. ${w[0]}${w[4] ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}</span>
                   <span class="${w[2].includes("Cao") ? "badge-red" : "badge-amber"} text-sm font-bold px-2 py-0.5 rounded-full shrink-0">${w[2]}</span>
                 </div>
                 <div class="text-slate-600"><strong>Bằng chứng:</strong> ${w[1]}</div>
@@ -1201,7 +1205,7 @@
             ${data.prelim.map(p => `
               <div class="flex items-center justify-between gap-2 p-2 rounded-lg bg-slate-50 border border-slate-200 text-sm">
                 <div>
-                  <div class="font-semibold text-slate-900">${p[0]}</div>
+                  <div class="font-semibold text-slate-900">${p[0]}${p[4] ? `<span class="badge-purple inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full ml-1.5 align-middle">CẬP NHẬT</span>` : ""}</div>
                   <div class="text-sm text-slate-500">${p[3]}</div>
                 </div>
                 <span class="${p[2]} text-sm font-bold px-2 py-0.5 rounded-full shrink-0">${p[1]}</span>
